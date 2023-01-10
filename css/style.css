@@ -599,9 +599,59 @@ body {
     line-height: 28px;
     margin-bottom: 26px;
 }
-.form .pull_form {
+.form .feedback_form {
+    
     width: 50%;
 }
+.form .feedback_form input {
+    outline: none;
+    border: 1px solid #777777;
+    border-radius: 10px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    color: #777777;
+    padding-left: 20px;
+}
+.form .feedback_form .phone_form {
+
+    margin-top: 109px;
+    margin-right: 75px;
+    margin-bottom: 20px;
+}
+.form .feedback_form .phone_form input {
+    width: 410px;
+    height: 54px;
+}
+.form .feedback_form .two_forms {
+    display: flex;
+    margin-right: 55px;
+}
+.form .feedback_form .two_forms input {
+    margin-right: 20px;
+    height: 54px;
+    width: 185px;
+    margin-bottom: 20px;
+}
+.form .feedback_form .confirm .text_confirm {
+    display: flex;
+}
+.form .feedback_form .confirm .text_confirm p {
+    font-size: 11px;
+    margin-right: 20px;
+}
+.form .feedback_form .confirm .text_confirm .accept {
+    width: 205px;
+    height: 54px;
+    background: #B31918;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    margin-left: 15px;
+}
+
 .map_background{
     height: 870px;
     width: 100%;
