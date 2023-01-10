@@ -10,13 +10,13 @@ body {
     height: 100%;
     font-family: 'Roboto-light';
 }
-.container {
+.page.container {
     width: 100%;
     display: flex;
     flex-direction: column;
 }
 .container {
-    width: 1000px;
+    width: 1060px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -93,26 +93,7 @@ body {
     text-decoration: none;
     margin-right: 50px;
 }
-/*.sub_nav .log_in {
-    
-    border: 1px solid #B31918;
-    width: 160px;
-    height: 36px;
-    text-align: center;
-    align-items: center;
-
-}
-.sub_nav .log_in a {
-    text-decoration: none;
-    font-family: Montserrat;
-    font-size: 15px;
-    font-weight: 700;
-    line-height: 18px;
-    color: #333333;
-    padding-top: 20px;
-}*/
 .button {
-    
     border:1px solid #B31918;
     color: #B31918;
     padding: 9px 55px;
@@ -125,7 +106,6 @@ body {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
-    font-size: 15px;
     line-height: 18px;
 }
 .content {
@@ -134,7 +114,7 @@ body {
     background-image: url(../img/main_back.png);
 }
 .content .container .images p {
-    color: aliceblue;
+    color: white;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -144,7 +124,7 @@ body {
 }
 .content .container .images h2 {
     text-transform: uppercase;
-    color: aliceblue;
+    color: white;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 600;
@@ -166,7 +146,6 @@ body {
     font-family: "Roboto-light";
     font-style: normal;
     font-weight: 500;
-    font-size: 15px;
     line-height: 18px;
 }
 .content .container .images a {
@@ -214,7 +193,6 @@ body {
     font-family: "Roboto-light";
     font-style: normal;
     font-weight: 500;
-    font-size: 15px;
     line-height: 18px;
     margin-bottom: 10px;
 }
@@ -226,9 +204,6 @@ body {
     font-size: 18px;
     margin-left: 30px;
     margin-bottom: 30px;
-}
-.slider {
-
 }
 .slider h3 {
     margin-bottom: 62px;
@@ -275,22 +250,22 @@ body {
     font-weight: 700;
     
 }
-.slider .slide {
-    width: 32%;
-    background-position: center;
-    background-repeat: no-repeat;
+.slider .slides .slide {
+    width: 340px;
+    position: relative;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    height: 302px;
 }
-.slider .slides .slide_1 {
-    background-image: url(../img/people_1.png);
+.slider .slides img {
+    height: 100%;
 }
-.slider .slides .slide_2 {
-    background-image: url(../img/people_2.png);
+.slider .slides .up {
+    position: absolute;
 }
-.slider .slides .slide_3 {
-    background-image: url(../img/people_3.png);
+.slider .slides .down {
+    position: absolute;
+    bottom: 0;
+
 }
 .services {
     height: 760px;
@@ -442,7 +417,6 @@ body {
     justify-content: space-between;
     height: 396px;
     margin-bottom: 159px;
-
 }
 .slider .container .students .time {
     padding: 11px 29px;
@@ -452,26 +426,13 @@ body {
     font-weight: 700;
     margin-right: 10px;
     margin-bottom: 10px;
+    position: absolute;
+    bottom: 0;
 }
 .slider .students .student {
-    width: 24%;
-    background-position: center;
-    background-repeat: no-repeat;
+    width: 251px;
     display: flex;
-    flex-direction: column;
-    justify-content: end;
-}
-.slider .students .student_1 {
-    background-image: url(../img/student.png);
-}
-.slider .students .student_2 {
-    background-image: url(../img/student.png);
-}
-.slider .students .student_3 {
-    background-image: url(../img/student.png);
-}
-.slider .students .student_4 {
-    background-image: url(../img/student.png);
+    position: relative;
 }
 .example {
     height: 420px;
@@ -480,10 +441,8 @@ body {
 
 }
 .example .people {
-    width: 42%;
-    background-image: url(../img/example.png);
-    background-position: center;
-    background-repeat: no-repeat;
+    width: 430px;
+    
 }
 .example .description {
     background-color: #FAFAFA;
@@ -516,23 +475,9 @@ body {
     justify-content: space-between;
     margin-bottom: 20px;
 }
-.companies .all_companies .first_row .company_1 {
-    width: 32.0%;
-    background-image: url(../img/company_1.png);
-    background-position: center;
-    background-repeat: no-repeat;
-}
-.companies .all_companies .first_row .company_2 {
-    width: 32.0%;
-    background-image: url(../img/company_2.png);
-    background-position: center;
-    background-repeat: no-repeat;
-}
-.companies .all_companies .first_row .company_3 {
-    width: 32.0%;
-    background-image: url(../img/company_3.png);
-    background-position: center;
-    background-repeat: no-repeat;
+.companies .all_companies .first_row .company {
+    width: 340px;
+
 }
 .companies .all_companies .second_row {
     display: flex;
@@ -540,23 +485,8 @@ body {
     justify-content: space-between;
     margin-bottom: 120px;
 }
-.companies .all_companies .second_row .company_4 {
-    width: 32.0%;
-    background-image: url(../img/company_4.png);
-    background-position: center;
-    background-repeat: no-repeat;
-}
-.companies .all_companies .second_row .company_5 {
-    width: 32.0%;
-    background-image: url(../img/company_5.png);
-    background-position: center;
-    background-repeat: no-repeat;
-}
-.companies .all_companies .second_row .company_6 {
-    width: 32.0%;
-    background-image: url(../img/company_6.png);
-    background-position: center;
-    background-repeat: no-repeat;
+.companies .all_companies .second_row .company {
+    width: 340px;
 }
 .mailling {
     height: 459px;
@@ -604,10 +534,7 @@ body {
 }
 
 .link_first .news .first_new .image {
-    background-image: url(../img/news_1.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 30%;
+    width: 90px;
 }
 .link_first .news .first_new .text_link {
     width: 70%;
@@ -630,36 +557,7 @@ body {
     line-height: 16px;
     color: #222222;
 }
-.link_first .news .first_new .image_2 {
-    background-image: url(../img/news_2.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 30%;
-}
-.link_first .news .first_new .image_3 {
-    background-image: url(../img/news_3.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 30%;
-}
-.link_first .news .first_new .image_4 {
-    background-image: url(../img/news_4.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 30%;
-}
-.link_first .news .first_new .image_5 {
-    background-image: url(../img/news_5.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 30%;
-}
-.link_first .news .first_new .image_6 {
-    background-image: url(../img/news_6.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 30%;
-}
+
 .white {
     background-color: white;
     height: 230px;
